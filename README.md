@@ -37,8 +37,6 @@ The variables included in this dataset are:
     measurement was taken
 
 
-
-
 The dataset is stored in a comma-separated-value (CSV) file and there
 are a total of 17,568 observations in this
 dataset.
@@ -72,8 +70,6 @@ repository state.
 NOTE: The GitHub repository also contains the dataset for the
 assignment so you do not have to download the data separately.
 
-
-
 ### Loading and preprocessing the data
 
 Show any code that is needed to
@@ -81,7 +77,6 @@ Show any code that is needed to
 1. Load the data (i.e. `read.csv()`)
 
 2. Process/transform the data (if necessary) into a format suitable for your analysis
-
 
 ### What is mean total number of steps taken per day?
 
@@ -91,7 +86,6 @@ the dataset.
 1. Make a histogram of the total number of steps taken each day
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
-
 
 ### What is the average daily activity pattern?
 

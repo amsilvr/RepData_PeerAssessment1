@@ -4,7 +4,7 @@ My first Knitr Document
 This is a chunk of text
 
 here is a chunk of code
-```{r firstchunk}
+```{r simulation, echo=FALSE}
 set.seed(1)
 x <- rnorm(100)
 mean(x)
