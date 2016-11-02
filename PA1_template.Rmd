@@ -190,4 +190,15 @@ AMD.day <- mutate(AMD1, wd = (weekdays(date, abbreviate = TRUE)), interval = as.
 for (i in seq_along(AMD.day$wd)) {
         AMD.day$wd[i] <- wk(AMD.day$wd[i])
 }
+
+# use dplyr functions to group and summarize by day type and interval
+by_daytype <- group_by(AMD.day, wd = as.factor(wd), interval) %>%
+              summarize(steps = mean(steps))
+
+#create ggplot object g
+g <- ggplot(data = by_daytype, mapping = aes(interval, steps))
+
+#plot
+g + geom_line() + facet_wrap(~wd, nrow = 2)
+
 ```
